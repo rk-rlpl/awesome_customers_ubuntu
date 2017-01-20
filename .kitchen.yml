@@ -15,7 +15,7 @@ verifier:
   name: inspec
 
 platforms:
-  - name: gbarbieru/xenial 
+  - name: ubuntu/trusty64
 
 suites:
   - name: default
@@ -25,3 +25,7 @@ suites:
       inspec_tests:
         - test/smoke/default
     attributes:
+      awesome_customers_ubuntu:
+        database:
+          root_password: 'mysql_root_password'
+          admin_password: 'mysql_admin_password'
